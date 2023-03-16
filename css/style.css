@@ -1,0 +1,105 @@
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    color: wheat;
+    background: rgb(0, 15, 92);
+    background: radial-gradient(circle, rgba(0, 15, 92, 1) 0%, rgba(0, 9, 56, 1) 36%, rgba(0, 0, 0, 1) 60%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-y: auto;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+#canvas {
+    position: fixed;
+    z-index: -1;
+}
+
+form {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#inp {
+    color: gray;
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 40%;
+}
+
+#inp::placeholder {
+    color: gray;
+    font-style: italic;
+}
+
+#search {
+    color: gray;
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    width: 15%;
+}
+
+#search:hover {
+    color: white;
+    background-color: gray;
+    border: 2px solid white;
+    transition: 0.8s;
+}
+
+#count {
+    margin-left: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: gray;
+    background-color: white;
+    border: none
+}
+
+#count:hover {
+    color: white;
+    background-color: gray;
+    border: none;
+    transition: 1s;
+}
+
+
+
+#output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: auto;
+    /* position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: auto; */
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
