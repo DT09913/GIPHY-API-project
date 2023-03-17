@@ -6,7 +6,6 @@
 }
 
 body {
-    /* max-width: 1200px; */
     margin: 0 auto;
     color: wheat;
     background: rgb(0, 15, 92);
@@ -30,7 +29,8 @@ form {
     z-index: 1;
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    padding: 20px 0;
+    background: #000;
 }
 
 #inp {
@@ -90,16 +90,22 @@ form {
 #output {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     overflow-y: auto;
-    /* position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: auto; */
 }
 
 .card {
+    width: 23%;
     justify-content: center;
     align-items: center;
-    border: none;
+
+}
+
+.card:hover {
+    transform: scale(1.4);
+}
+
+iframe {
+    border-radius: 20%;
 }
